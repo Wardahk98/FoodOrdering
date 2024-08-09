@@ -1,0 +1,89 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="card text-center m-5 p-5">
+  <div class="card-body">
+    <form class="d-flex justify-content-center ">
+        <div class="input-group w-75 px-3">
+          <input type="text" class="form-control" placeholder="Search Food">
+        </div>
+      <button class="btn btn-outline-primary" type="submit">Button</button>
+    </form>
+  </div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------->
+<div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Discover New Cuisines</h2>
+
+    <div class="row  row-cols-lg-3 align-items-stretch g-3 py-3">
+      <div class="col">
+        <a href="#">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url({%static 'fast_food.jpg'%});background-size:cover;">
+          <div class="d-flex flex-column h-100 p-4 pb-4 text-shadow-1">
+            <h3 class="px-4 mt-5 mb-4 display-6  fw-bold bg-dark bg-opacity-50 text-white">Fast Food</h3>
+          </div>
+        </div>
+          </a>
+      </div>
+
+      <div class="col">
+        <a href="#">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url({% static 'sweets.png' %});background-size:cover;">
+          <div class="d-flex flex-column h-100 p-4 pb-4 text-shadow-1">
+            <h3 class="px-4 mt-5 mb-4 display-6 fw-bold bg-dark bg-opacity-50 text-white">Sweets</h3>
+          </div>
+        </div>
+          </a>
+      </div>
+
+
+      <div class="col">
+        <a href="#">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url({% static 'homecooked.webp' %});background-size:cover;">
+          <div class="d-flex flex-column h-100 p-4 pb-4 text-shadow-1">
+            <h3 class="px-4 mt-5 mb-4 display-6 fw-bold bg-dark bg-opacity-50 text-white">Home Cooked</h3>
+          </div>
+        </div>
+          </a>
+      </div>
+    </div>
+  <div class="row  row-cols-lg-3 align-items-stretch g-3 py-5">
+      <div class="col">
+        <a href="#">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url({% static 'continental.png' %});  background-size:cover;">
+          <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
+            <h3 class="px-4 mt-5 mb-4 display-6 fw-bold bg-dark bg-opacity-50 ">Continental</h3>
+          </div>
+        </div>
+          </a>
+      </div>
+
+    <div class="col">
+      <a href="#">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url({% static 'chinese.jpg' %}); background-size:cover">
+          <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
+            <h3 class="px-4 mt-5 mb-4 display-6 fw-bold bg-dark bg-opacity-50 ">Chinese</h3>
+          </div>
+        </div>
+        </a>
+      </div>
+
+    <div class="col">
+      <a href="#">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url({% static 'pakistani_food.PNG' %});background-size:cover;">
+          <div class="d-flex flex-column h-100 p-4 pb-5 text-shadow-1">
+            <h3 class="px-4 mt-5 mb-4 display-6 fw-bold bg-dark bg-opacity-50 text-white">Desi Food</h3>
+          </div>
+        </div>
+        </a>
+      </div>
+  </div>
+  </div>
+
+
+
+{% endblock %}
